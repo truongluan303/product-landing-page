@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<style>
+    body {
+    background-color: whitesmoke;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: bisque;
+    padding: 10px;
+    display: flex;
+    width: auto;
+}
+
+li {
+    list-style: none;
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 90%;
+}
+
+
+#headline {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#header-img{
+    width: 300px;
+    padding-top: 10px;
+    height: fit-content;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+#form-section {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    margin-top: 130px;
+}
+
+#email {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 25px;
+    width: 350px;
+    justify-self: center;
+}
+
+#submit {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    background-color: rgb(230, 193, 100);
+    height: 40px;
+    width: 150px;
+    margin-top: 0.5em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 7em;
+}
+
+.feature {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 120px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    padding: 5px;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.price-box {
+    background-color: rgb(250, 240, 227);
+    width: 300px;
+    height: fit-content;
+    padding-bottom: 30px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1.3px;
+    margin-right: 2em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.trombone-type {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    color: orange;
+}
+
+.trombone-desc {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+}
+
+.select-button {
+    width: 130px;
+    height: 45px;
+    background-color: orange;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    border: none;
+}
+
+#footer {
+    width: auto;
+    background-color: rgb(206, 206, 206);
+    text-align: left;
+    margin-top: 5em;
+}
+
+#bottom-nav-bar {
+    width: auto;
+    display: flex;
+    justify-items: left;
+    justify-content: space-around;
+}
+
+.bottom-ul {
+    padding-left: 40%;
+}
+
+@media (max-width: 1000px) {
+    nav > ul {
+        padding-left: 50%;
+    }
+    #pricing {
+        flex-direction: column;
+    }
+    .price-box {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 700px) {
+    #header-img {
+        padding-top: 30px;
+    }
+    nav > ul {
+        flex-direction: column;
+        padding-left: 80%;
+    }
+    .bottom-ul {
+        flex-direction: row;
+    }
+}
+@media (max-width: 600px) {
+    nav > ul {
+        padding-left: 40%
+    }
+}
+@media (max-height: 500px) {
+    header {
+        position: relative;
+    }
+}
+
+</style>
+
+
+<html>
+    <head>
+        <title>Product Landing Page</title>
+        <link rel="styleSheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a9cfebec94.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header id="header">
+            <img id="header-img"  src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"/>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <div id="form-section" action="https://www.freecodecamp.com/email-submit">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <h1 id="headline">Handcrafted, home-made masterpieces</h1>
+                <input type="email" id="email" name="email" placeholder="Enter your email here" required/><br>
+                <input type="submit" id="submit" value="Get Started">
+            </form>
+        </div>
+
+
+        <div id="features" class="wrapper">
+            <section class="feature">
+                <div class="icon"><i class="fas fa-gem" style="font-size: 90px; color: orange"></i></div>
+                <div class="description">
+                    <h2 style="margin-bottom: -0.2em; color:royalblue;">Premium Materials</h2>
+                    <p style="font-size: 20px;">Our trombones use the shiniest brass which is sourced locally. This
+                        will increase the longevity of your purchase.</p>
+                </div>
+            </section>
+                
+            <section class="feature">
+                <div class="icon"><i class="fas fa-shipping-fast" style="font-size: 90px; color: orange"></i></div>
+                <div class="description">
+                    <h2 style="margin-bottom: -0.2em; color: royalblue;">Fast Shipping</h2>
+                    <p style="font-size: 20px;">We make sure you recieve your trombone as soon as we have finished
+                        making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+            </section>
+
+            <section class="feature">
+                <div class="icon"><i class="fas fa-clipboard-check" style="font-size: 90px; color: orange"></i></div>
+                <div class="description">
+                    <h2 style="margin-bottom: -0.2em; color: royalblue;">Quality Assurance</h2>
+                    <p style="font-size: 20px;">For every purchase you make, we will ensure there are no damages 
+                        or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+            </section>
+        </div>
+
+        <div id="how-it-works" class="wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PZiPN1nOwbE" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+        </div>
+
+
+        <div id="pricing" class="wrapper">
+            <div class="price-box" id="tenor">
+                <div class="trombone-type">
+                    <h3>TENOR TROMBONE</h3>
+                </div>
+                <div class="trombone-desc">
+                    <h1 value="600" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">$600</h1>
+                    <p style="font-size: 20px;">
+                        Lorem ipsum.<br>
+                        Lorem ipsum.<br>
+                        Lorem ipsum dolor.<br>
+                        Lorem ipsum.
+                    </p>
+                    <input type="button" class="select-button" value="Select"/>
+                </div>
+            </div>
+            <div class="price-box" id="bass">
+                <div class="trombone-type">
+                    <h3>BASS TROMBONE</h3>
+                </div>
+                <div class="trombone-desc">
+                    <h1 value="900" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">$900</h1>
+                    <p style="font-size: 20px;">
+                        Lorem ipsum.<br>
+                        Lorem ipsum.<br>
+                        Lorem ipsum dolor.<br>
+                        Lorem ipsum.
+                    </p>
+                    <input type="button" class="select-button" value="Select"/>
+                </div>
+            </div>
+            <div class="price-box" id="valve">
+                <div class="trombone-type">
+                    <h3>VALVE TROMBONE</h3>
+                </div>
+                <div class="trombone-desc">
+                    <h1 value="1200" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">$1200</h1>
+                    <p style="font-size: 20px;">
+                        Lorem ipsum.<br>
+                        Lorem ipsum.<br>
+                        Lorem ipsum dolor.<br>
+                        Lorem ipsum.
+                    </p>
+                    <input type="button" class="select-button" value="Select"/>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <nav id="bottom-nav-bar">
+                <ul class="bottom-ul">
+                    <li><a href="#" class="nav-link">Privacy</a></li>
+                    <li><a href="#" class="nav-link">Terms</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
